@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuldeep Singh | Cyber-Orbit</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ========== CURSOR ========== -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- ========== NAV ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-brand">
+    <span class="brand-icon">⬡</span>
+    <span class="brand-text">CYBER<span class="neon-green">ORBIT</span></span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#terminal" class="nav-link">Terminal</a></li>
+    <li><a href="#blog" class="nav-link">Blog</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark">
+    <i class="fas fa-sun"></i>
+  </button>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="home">
+  <canvas id="bgCanvas"></canvas>
+  <div class="scanlines"></div>
+
+  <div class="hero-content">
+    <div class="glitch-wrapper">
+      <h1 class="glitch" data-text="KULDEEP SINGH">KULDEEP SINGH</h1>
+    </div>
+    <div class="hero-subtitle">
+      <span class="prefix">&gt;&gt; </span>
+      <span class="typed-text" id="typedText"></span>
+      <span class="cursor-blink">_</span>
+    </div>
+    <p class="hero-tagline">Building AI-powered tools and cybersecurity solutions for the future</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">
+        <i class="fas fa-code"></i> View Projects
+      </a>
+      <a href="Kuldeep_singh.pdf" download class="btn btn-outline">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge">AI Developer</span>
+      <span class="badge">Cybersecurity</span>
+      <span class="badge">Full Stack</span>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-arrow"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// ABOUT</span>
+      <h2>Who Am I<span class="neon-green">?</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="img-frame">
+          <img src="photo.jpg" alt="Kuldeep Singh" class="profile-img" />
+          <div class="img-overlay"></div>
+          <div class="img-corner tl"></div>
+          <div class="img-corner tr"></div>
+          <div class="img-corner bl"></div>
+          <div class="img-corner br"></div>
+        </div>
+        <div class="img-stats">
+          <div class="img-stat"><span class="stat-num neon-green">6+</span><span>Projects</span></div>
+          <div class="img-stat"><span class="stat-num neon-cyan">4+</span><span>Tech Areas</span></div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="about-intro">I'm a self-driven developer operating at the intersection of <span class="highlight">Artificial Intelligence</span> and <span class="highlight">Cybersecurity</span> — building tools that push the boundaries of what's possible in digital defense and automation.</p>
+        <p>With hands-on experience in Linux environments, AI-driven security workflows, and full-stack development, I architect real-world solutions rather than just theoretical projects. Every tool I build is battle-tested and purpose-built.</p>
+        <div class="about-details">
+          <div class="detail-item">
+            <i class="fas fa-graduation-cap neon-green"></i>
+            <div>
+              <strong>Education</strong>
+              <span>12th Non-Medical — PSEB (2024–25) · 58%</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-certificate neon-cyan"></i>
+            <div>
+              <strong>Certification (Completed)</strong>
+              <a href="https://skill-india-dev.s3.ap-south-1.amazonaws.com/certificate_generic/uploaded_elements/2025060846956382/certificate_9390e20a-9cac-48f7-9fb4-35eddca4aeae.pdf" target="_blank" class="cert-link">Skill India · View Certificate ↗</a>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-shield-alt neon-green"></i>
+            <div>
+              <strong>Currently Enrolled</strong>
+              <span>AI-Powered Cybersecurity Master — Simplilearn (PGP)</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-map-marker-alt neon-cyan"></i>
+            <div>
+              <strong>Location</strong>
+              <span>Punjab, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SKILLS ========== -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// SKILLS</span>
+      <h2>Tech Arsenal<span class="neon-green">.</span></h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category reveal">
+        <div class="cat-header">
+          <i class="fas fa-terminal neon-green"></i>
+          <h3>Programming</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>Python</span><span class="skill-pct">85%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-pct="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>Bash / Shell</span><span class="skill-pct">78%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-pct="78"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>JavaScript</span><span class="skill-pct">65%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-pct="65"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>C (Language)</span><span class="skill-pct">55%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-pct="55"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="cat-header">
+          <i class="fas fa-shield-virus neon-cyan"></i>
+          <h3>Cybersecurity Tools</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">Nmap</span>
+          <span class="stag">Wireshark</span>
+          <span class="stag">Burp Suite</span>
+          <span class="stag">Aircrack-ng</span>
+          <span class="stag">Wifite</span>
+          <span class="stag">Metasploit</span>
+          <span class="stag">Kali Linux</span>
+          <span class="stag">MX Linux</span>
+          <span class="stag">Ubuntu</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="cat-header">
+          <i class="fas fa-globe neon-green"></i>
+          <h3>Web Development</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">HTML5</span>
+          <span class="stag">CSS3</span>
+          <span class="stag">JavaScript</span>
+          <span class="stag">Responsive Design</span>
+          <span class="stag">GitHub Pages</span>
+          <span class="stag">Flask (Basic)</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="cat-header">
+          <i class="fas fa-robot neon-cyan"></i>
+          <h3>AI Tools</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="stag">Claude AI</span>
+          <span class="stag">ChatGPT</span>
+          <span class="stag">DeepSeek</span>
+          <span class="stag">AI Automation</span>
+          <span class="stag">Prompt Engineering</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// PROJECTS</span>
+      <h2>Deployed Weapons<span class="neon-green">.</span></h2>
+    </div>
+
+    <div class="filter-btns">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="cyber">Cybersecurity</button>
+      <button class="filter-btn" data-filter="tool">Tools</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal" data-cat="ai">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="project-icon"><i class="fas fa-brain"></i></div>
+          <div class="project-type ai-tag">AI</div>
+        </div>
+        <h3>KAI_CYBER_AI</h3>
+        <p>AI-powered cybersecurity assistant built for learning, automation, and threat analysis. Integrates LLM reasoning with security tooling for next-level workflow enhancement.</p>
+        <div class="tech-stack">
+          <span>Python</span><span>AI/LLM</span><span>Cybersecurity</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/cyber-orbit/KAI_CYBER_Ai" target="_blank" class="card-btn github-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <span class="card-btn demo-btn disabled"><i class="fas fa-external-link-alt"></i> Demo</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="ai">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="project-type ai-tag">AI</div>
+        </div>
+        <h3>Aegis AI</h3>
+        <p>Terminal-based AI assistant engineered for cybersecurity professionals and Linux power users. Provides contextual guidance, command suggestions, and threat explanations in-terminal.</p>
+        <div class="tech-stack">
+          <span>Python</span><span>Terminal</span><span>AI</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/cyber-orbit/aegis_ai" target="_blank" class="card-btn github-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <span class="card-btn demo-btn disabled"><i class="fas fa-external-link-alt"></i> Demo</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="ai tool">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="project-icon"><i class="fas fa-terminal"></i></div>
+          <div class="project-type ai-tag">AI · CLI</div>
+        </div>
+        <h3>Kai CLI</h3>
+        <p>Command-line AI assistant specialized in Kali Linux and offensive security tooling. Bridges the gap between AI capabilities and real-world penetration testing workflows.</p>
+        <div class="tech-stack">
+          <span>Python</span><span>CLI</span><span>Kali Linux</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/cyber-orbit/Kai_cli" target="_blank" class="card-btn github-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <span class="card-btn demo-btn disabled"><i class="fas fa-external-link-alt"></i> Demo</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="cyber tool">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="project-icon"><i class="fas fa-globe-asia"></i></div>
+          <div class="project-type cyber-tag">Browser</div>
+        </div>
+        <h3>CyberForge Browser</h3>
+        <p>Cybersecurity-focused browser with built-in reconnaissance tools, OSINT capabilities, and privacy-first architecture. Purpose-built for security researchers and red teamers.</p>
+        <div class="tech-stack">
+          <span>JavaScript</span><span>Browser Engine</span><span>OSINT</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/cyber-orbit/Cyberforge" target="_blank" class="card-btn github-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <span class="card-btn demo-btn disabled"><i class="fas fa-external-link-alt"></i> Demo</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="cyber tool">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="project-type cyber-tag">Report</div>
+        </div>
+        <h3>ReportX</h3>
+        <p>Automated security report generator with multi-format export support (TXT, Markdown, HTML). Designed for penetration testers who need professional, structured deliverables fast.</p>
+        <div class="tech-stack">
+          <span>Python</span><span>Markdown</span><span>HTML</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/cyber-orbit/ReportX" target="_blank" class="card-btn github-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <span class="card-btn demo-btn disabled"><i class="fas fa-external-link-alt"></i> Demo</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="cyber tool">
+        <div class="card-glow"></div>
+        <div class="card-top">
+          <div class="project-icon"><i class="fas fa-satellite-dish"></i></div>
+          <div class="project-type cyber-tag">OSINT</div>
+        </div>
+        <h3>OrbitTrace</h3>
+        <p>Advanced OSINT reconnaissance tool for digital footprint analysis. Tracks, aggregates and maps target information from open-source intelligence sources with precision.</p>
+        <div class="tech-stack">
+          <span>Python</span><span>OSINT</span><span>Recon</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/cyber-orbit/OrbitTrace" target="_blank" class="card-btn github-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <span class="card-btn demo-btn disabled"><i class="fas fa-external-link-alt"></i> Demo</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== TERMINAL ========== -->
+<section class="section terminal-section" id="terminal">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// TERMINAL</span>
+      <h2>Live Shell<span class="neon-green">.</span></h2>
+    </div>
+    <div class="terminal-wrap reveal">
+      <div class="terminal-bar">
+        <span class="t-dot red"></span>
+        <span class="t-dot yellow"></span>
+        <span class="t-dot green"></span>
+        <span class="t-title">kai@cyber-orbit: ~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="term-line"><span class="prompt">kai@cyber-orbit:~$</span> <span class="t-cmd">whoami</span></div>
+        <div class="term-output">Kuldeep Singh — AI Developer · Cybersecurity Researcher · Full Stack Builder</div>
+        <div class="term-line"><span class="prompt">kai@cyber-orbit:~$</span> <span class="t-cmd">cat skills.txt</span></div>
+        <div class="term-output">[+] Python, Bash, JavaScript, C<br>[+] Nmap, Wireshark, Burp Suite, Aircrack-ng<br>[+] AI/LLM Integration<br>[+] OSINT &amp; Reconnaissance</div>
+        <div class="term-line"><span class="prompt">kai@cyber-orbit:~$</span> <span class="t-cmd">ls projects/</span></div>
+        <div class="term-output">KAI_CYBER_AI/  aegis_ai/  Kai_cli/  CyberForge/  ReportX/  OrbitTrace/</div>
+        <div class="term-line"><span class="prompt">kai@cyber-orbit:~$</span> <span class="t-cmd">cat mission.txt</span></div>
+        <div class="term-output">Building AI-powered tools and cybersecurity solutions for the future.<br>Status: <span class="neon-green">ONLINE</span> | Mode: <span class="neon-cyan">HACKER</span></div>
+        <div class="term-line"><span class="prompt">kai@cyber-orbit:~$</span> <span class="t-cmd" id="userInput"></span><span class="cursor-blink">█</span></div>
+      </div>
+      <div class="terminal-input-row">
+        <span class="prompt">kai@cyber-orbit:~$</span>
+        <input type="text" id="termInput" class="term-input" placeholder="Type a command (try: help, contact, projects)" autocomplete="off" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS ========== -->
+<section class="section stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <div class="stat-icon"><i class="fas fa-code-branch neon-green"></i></div>
+        <div class="stat-number" data-target="6">0</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon"><i class="fas fa-tools neon-cyan"></i></div>
+        <div class="stat-number" data-target="15">0</div>
+        <div class="stat-label">Technologies</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon"><i class="fas fa-shield-alt neon-green"></i></div>
+        <div class="stat-number" data-target="9">0</div>
+        <div class="stat-label">Security Tools</div>
+      </div>
+      <div class="stat-card reveal">
+        <div class="stat-icon"><i class="fas fa-certificate neon-cyan"></i></div>
+        <div class="stat-number" data-target="2">0</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BLOG ========== -->
+<section class="section blog" id="blog">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// BLOG</span>
+      <h2>Dispatch Log<span class="neon-green">.</span></h2>
+    </div>
+    <div class="blog-grid">
+
+      <div class="blog-card reveal">
+        <div class="blog-date">APR 2025</div>
+        <div class="blog-tag cyber-tag">OSINT</div>
+        <h3>How I Built OrbitTrace</h3>
+        <p>A deep-dive into the architecture and methodology behind building a Python-based OSINT recon tool from scratch — from data sources to output formatting.</p>
+        <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-date">MAR 2025</div>
+        <div class="blog-tag ai-tag">Linux</div>
+        <h3>Basics of Kali Linux</h3>
+        <p>Everything I wish I knew when I started — setting up Kali, essential tools, network reconnaissance, and developing your first pentest workflow.</p>
+        <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="blog-card reveal">
+        <div class="blog-date">FEB 2025</div>
+        <div class="blog-tag cyber-tag">Journey</div>
+        <h3>My Cybersecurity Journey</h3>
+        <p>How a non-technical background didn't stop me from diving deep into cybersecurity and AI — lessons learned, tools mastered, and what's coming next.</p>
+        <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// CONTACT</span>
+      <h2>Open Channel<span class="neon-green">.</span></h2>
+    </div>
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <p class="contact-intro">Have a project in mind, collaboration opportunity, or just want to talk cybersecurity? My signal is always on.</p>
+        <div class="contact-links">
+          <a href="mailto:ks8124708@gmail.com" class="c-link">
+            <i class="fas fa-envelope neon-green"></i>
+            <span>ks8124708@gmail.com</span>
+          </a>
+          <a href="tel:+917681903497" class="c-link">
+            <i class="fas fa-phone neon-cyan"></i>
+            <span>+91 7681903497</span>
+          </a>
+          <a href="https://github.com/cyber-orbit" target="_blank" class="c-link">
+            <i class="fab fa-github neon-green"></i>
+            <span>github.com/cyber-orbit</span>
+          </a>
+          <a href="https://www.linkedin.com/in/kuldeep-singh-9520753aa/" target="_blank" class="c-link">
+            <i class="fab fa-linkedin neon-cyan"></i>
+            <span>LinkedIn Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xyzpgvdj" method="POST">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-icon">⬡</span>
+      <span class="brand-text">CYBER<span class="neon-green">ORBIT</span></span>
+    </div>
+    <p class="footer-copy">© 2025 Kuldeep Singh · Cyber-Orbit. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/cyber-orbit" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/kuldeep-singh-9520753aa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:ks8124708@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
